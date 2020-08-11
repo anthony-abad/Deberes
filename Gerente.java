@@ -1,22 +1,28 @@
 
-public class Gerente extends Empleado {
+public class Gerente extends SupervisorTecnico {
+	
+	private double viaticos;
+	
+	public Gerente(String nombre, String apellido, int edad, double salario, int anhosTrabajados, double viaticos) {
+		super(nombre, apellido, edad, salario, anhosTrabajados);
+		this.viaticos = viaticos;
+		
+	}
 
-	private int n_auto;
-	private int n_estacionamiento;
+	@Override
+	public double getSalario() {
+		return super.getSalario()+viaticos;
+		
+	}
+
+
+
 	
-	public int getN_auto() {
-		return n_auto;
-	}
-	public void setN_auto(int n_auto) {
-		this.n_auto = n_auto;
-	}
-	public int getN_estacionamiento() {
-		return n_estacionamiento;
-	}
-	public void setN_estacionamiento(int n_estacionamiento) {
-		this.n_estacionamiento = n_estacionamiento;
-	}
 	
+	
+
+	
+
 	
 	
 

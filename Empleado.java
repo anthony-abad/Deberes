@@ -1,10 +1,19 @@
 
-public class Empleado {
+public abstract class Empleado {
 	
 	private String nombre;
 	private String apellido;
 	private int edad;
-	private int cédula;
+	protected double salario;
+	
+	
+	public Empleado(String nombre, String apellido, int edad, double salario) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+		this.salario = salario;
+	}
 	
 	public String getNombre() {
 		return nombre;
@@ -24,11 +33,18 @@ public class Empleado {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
-	public int getCédula() {
-		return cédula;
-	}
-	public void setCédula(int cédula) {
-		this.cédula = cédula;
+
+	public double getSalario() {
+		return salario;
 	}
 
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	
+	
+	
+	
+	
+	
 }

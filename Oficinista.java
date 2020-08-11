@@ -1,20 +1,16 @@
 
 public class Oficinista extends Empleado{
 	
-	private int nidentificacion;
-	private int codigodearea;
-	public int getNidentificacion() {
-		return nidentificacion;
+
+	
+	public Oficinista(String nombre, String apellido, int edad,  double salario) {
+		super(nombre, apellido, edad, salario);
+		
 	}
-	public void setNidentificacion(int nidentificacion) {
-		this.nidentificacion = nidentificacion;
-	}
-	public int getCodigodearea() {
-		return codigodearea;
-	}
-	public void setCodigodearea(int codigodearea) {
-		this.codigodearea = codigodearea;
-	}
+
+	
+	
+	
 	
 	
 
